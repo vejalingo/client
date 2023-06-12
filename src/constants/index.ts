@@ -1,4 +1,4 @@
-export const WebSocketUrl = 'ws://localhost:5001'
+export const WebSocketUrl = 'ws://localhost:5000'
 
 export const copy = {
     connectWs: "Connect WS",
