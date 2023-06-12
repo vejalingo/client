@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import { Container, Grid } from "@mui/material";
+import SensorData from "containers/sensor";
+import { StyledBox, StyledPaper } from "components/styles";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Container>
+        <StyledBox>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <StyledPaper>
+                <h1>(IoT) Sensors</h1>
+              </StyledPaper>
+            </Grid>
+          </Grid>
+          <Grid container spacing={2}>
+            <SensorData />
+          </Grid>
+        </StyledBox>
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
