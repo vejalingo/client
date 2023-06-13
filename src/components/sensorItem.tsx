@@ -3,7 +3,6 @@ import { Grid, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import GradeIcon from "@mui/icons-material/Grade";
-import { yellow } from '@mui/material/colors';
 import { StyledButton, StyledList, StyledListSubheader } from "./styles";
 interface SensorItemProps {
   id: string;
@@ -38,14 +37,14 @@ const SensorItem: React.FC<SensorItemProps> = ({
 
         <ListItem>
           <ListItemIcon>
-            <AcUnitIcon sx={{ color: yellow[200] }} />
+            <AcUnitIcon sx={{ color: "#E0D9FF" }} />
           </ListItemIcon>
           <ListItemText primary={unit} />
         </ListItem>
 
         <ListItem>
           <ListItemIcon>
-            <GradeIcon sx={{ color: yellow[200] }} />
+            <GradeIcon sx={{ color: "#E0D9FF" }} />
           </ListItemIcon>
           <ListItemText primary={value || "-"} primaryTypographyProps={{fontSize: "2rem"}} />
         </ListItem>
